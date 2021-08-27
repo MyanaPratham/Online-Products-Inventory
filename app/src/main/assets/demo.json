@@ -1,0 +1,16 @@
+{
+"product":[
+  {
+    "sku": "001",
+    "product": "biscuit",
+    "company": "Parle G",
+    "qty": 5
+  },
+  {
+    "sku": "002",
+    "product": "Shampoo",
+    "company": "Olive",
+    "qty": 100
+  }
+]
+}

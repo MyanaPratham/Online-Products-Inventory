@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_actvity"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        main child of scroll view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_250dp"
+                    android:layout_height="@dimen/dimen_250dp"
+                    android:layout_margin="@dimen/dimen15dp"
+                    app:cardCornerRadius="@dimen/dimen8dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProductDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pd_1" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:layout_marginRight="@dimen/dimen20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.onlinemarket.integration_layer.widgets.textview.MainHeadNameTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top"
+                        android:id="@+id/txtPDTitle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black" />
+
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:text="Dorothy Perkins"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey" />
+
+
+                </LinearLayout>
+
+                <com.onlinemarket.integration_layer.widgets.textview.MainHeadNameTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:text="$34"
+                    android:id="@+id/txtCost"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--                Description  layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/light_border_stroke"
+                    android:orientation="vertical">
+
+                    <com.onlinemarket.integration_layer.widgets.textview.MainHeadNameTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10dp"
+                        android:text="@string/product_description"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10dp"
+                        android:id="@+id/txtPDDes"
+                        android:text="@string/pd_des"
+                        android:textColor="@color/grey" />
+
+                </LinearLayout>
+
+                <!--// Detail info-->
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/light_border_stroke"
+                    android:orientation="vertical">
+
+                    <com.onlinemarket.integration_layer.widgets.textview.MainHeadNameTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10dp"
+                        android:text="Detail Information"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen10dp"
+                        android:paddingRight="@dimen/dimen10dp"
+                        android:paddingTop="@dimen/dimen10dp"
+                        android:text="@string/pd_name"
+                        android:textSize="@dimen/dimen13sp"
+                        android:textColor="@color/black" />
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:textSize="@dimen/dimen12sp"
+                        android:id="@+id/txtPdName"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Top"
+                        android:textColor="@color/black" />
+
+
+
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen10dp"
+                        android:paddingRight="@dimen/dimen10dp"
+                        android:paddingTop="@dimen/dimen10dp"
+                        android:text="@string/pd_size"
+                        android:textSize="@dimen/dimen13sp"
+                        android:textColor="@color/black" />
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:textSize="@dimen/dimen12sp"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="M"
+                        android:textColor="@color/black" />
+
+
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen10dp"
+                        android:paddingRight="@dimen/dimen10dp"
+                        android:paddingTop="@dimen/dimen10dp"
+                        android:text="@string/pd_color"
+                        android:textSize="@dimen/dimen13sp"
+                        android:textColor="@color/black" />
+                    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+                        android:textSize="@dimen/dimen12sp"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="White"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <com.onlinemarket.integration_layer.widgets.button.CustomButton
+                    android:layout_width="match_parent"
+                    android:background="@drawable/upload_bg"
+                    android:text="Product Review"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:paddingLeft="@dimen/dimen10dp"
+                    android:layout_height="@dimen/dimen41dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        main child ends here -->
+    </ScrollView>
+
+</LinearLayout>

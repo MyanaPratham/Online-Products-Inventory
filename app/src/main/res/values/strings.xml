@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Online Market</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="locate_your_self">Locate Yourself</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_description_comp">* Manufacturing Details </string>
+    <string name="pd_des">Nullam gravida ultricies pulvinar. Curabitur cursus volutpat magna, et placerat magna dapibus a. Aliquam erat volutpat. Mauris turpis lorem, rutrum vel mollis a, dictum gravida leo. Quisque non nibh est. Etiam est lacus, accumsan</string>
+    <string name="pd_name">Product Name</string>
+    <string name="pd_size">Product Size</string>
+    <string name="pd_color">Product Color</string>
+    <string name="pd_info">Product Information</string>
+    <string name="product_name_comp">* Product Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="profile">Profile</string>
+    <string name="products">Products</string>
+    <string name="cost_comp">* Quantity</string>
+    <string name="cost">Cost</string>
+</resources>

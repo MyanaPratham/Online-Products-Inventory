@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBGcolor"
+    android:orientation="vertical"
+    tools:context=".front_end_layer.view.fragment.dashboard.DashboardFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar_dashbaord" />
+
+    <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:id="@+id/txtWarn"
+        android:gravity="center"
+        android:text="No Products available , Please add new products "
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_height="match_parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/listProduct"
+        android:layout_marginBottom="@dimen/dimen20dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_marginTop="@dimen/dimen20dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dimen20dp"
+        android:layout_marginBottom="@dimen/dimen60dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorPrimary" />
+</RelativeLayout>

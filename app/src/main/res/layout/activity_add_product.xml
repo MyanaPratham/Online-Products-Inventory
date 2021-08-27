@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_actvity" />
+
+    <LinearLayout
+        android:layout_weight="1.7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp">
+
+        <com.onlinemarket.integration_layer.widgets.textview.MainHeadNameTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen10dp"
+            android:gravity="center"
+            android:text="@string/pd_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary" />
+
+        <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen10dp"
+            android:gravity="left"
+            android:text="@string/product_name_comp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+
+
+
+
+
+        <com.onlinemarket.integration_layer.widgets.edittext.CustomEditText
+            android:paddingLeft="@dimen/dimen10dp"
+            android:hint="@string/pd_name"
+            android:id="@+id/pdName"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen41dp"></com.onlinemarket.integration_layer.widgets.edittext.CustomEditText>
+
+
+        <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen10dp"
+            android:gravity="left"
+            android:text="@string/cost_comp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+        <com.onlinemarket.integration_layer.widgets.edittext.CustomEditText
+            android:paddingLeft="@dimen/dimen10dp"
+            android:hint="Quantity"
+            android:id="@+id/pdCost"
+            android:inputType="number"
+            android:maxLength="2"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen41dp"></com.onlinemarket.integration_layer.widgets.edittext.CustomEditText>
+
+
+        <com.onlinemarket.integration_layer.widgets.textview.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen10dp"
+            android:gravity="left"
+            android:text="@string/product_description_comp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+        <com.onlinemarket.integration_layer.widgets.edittext.CustomEditText
+            android:paddingLeft="@dimen/dimen10dp"
+            android:hint="@string/product_description"
+            android:paddingTop="@dimen/dimen5dp"
+            android:gravity="center_vertical|top"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:id="@+id/pdDes"
+            android:layout_height="@dimen/dimen70dp"></com.onlinemarket.integration_layer.widgets.edittext.CustomEditText>
+
+
+        <com.onlinemarket.integration_layer.widgets.button.CustomButton
+            android:drawableRight="@drawable/ic_upload"
+            android:text="Upload Photo"
+            android:id="@+id/butUpload"
+            android:drawablePadding="@dimen/dimen10dp"
+            android:textColor="@color/black"
+            android:padding="@dimen/dimen10dp"
+            android:background="@drawable/upload_bg"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen41dp"></com.onlinemarket.integration_layer.widgets.button.CustomButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight=".3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp">
+
+
+        <com.onlinemarket.integration_layer.widgets.button.CustomButton
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:id="@+id/butCancel"
+            android:background="@drawable/button_cancel"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:padding="@dimen/dimen5dp"
+            android:layout_marginRight="@dimen/dimen5dp"
+            android:layout_width="@dimen/dimen150dp"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/dimen41dp"/>
+
+        <com.onlinemarket.integration_layer.widgets.button.CustomButton
+            android:layout_marginLeft="@dimen/dimen5dp"
+            android:textAllCaps="false"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:id="@+id/butSave"
+            android:background="@drawable/button_save"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:padding="@dimen/dimen5dp"
+            android:layout_width="@dimen/dimen150dp"
+            android:layout_height="@dimen/dimen41dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
